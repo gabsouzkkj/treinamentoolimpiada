@@ -1,0 +1,54 @@
+.geral {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    height: 14rem;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20%;
+    position: relative;
+    padding: 0 auto
+}
+
+.bola {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00008b;
+    transition: .12s;
+    border-radius: 70px;
+}
+
+.bola:before {
+    position: absolute;
+    content: "";
+    height: 5rem;
+    width: 5rem;
+    top: 70px;
+    left: 61px;
+    border-radius: 50px;
+    background-color: aqua;
+    transition: .4s
+}
+
+input:checked + .bola {
+    background-color: aqua;
+}
+
+input:checked + .bola:before {
+    transform: translateX(18rem);
+    background-color: #00008b
+}
+
+input {
+    display: none
+}
+
+@keyframes anim {
+    
+}
